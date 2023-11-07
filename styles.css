@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to top, #ff004f, white);
+    color: white;
+}
+
+#card-container {
+    padding: 30px;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex-basis: 100%;
+}
+
+.col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.col-2 {
+    flex-basis: 100%;
+}
+
+.Title {
+    font-size: 30px;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #ff004f, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-mask-image: linear-gradient(45deg, #ff004f, black);
+    mask-image: linear-gradient(45deg, #ff004f, black);
+}
+
+.message {
+    font-size: 16px;
+    padding: 15px;
+    font-style: italic;
+    color: black;
+}
+
+#love-container {
+    padding: 30px;
+    color: black;
+}
+
+.love-poem {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-1 {
+    flex-basis: 100%;
+}
+
+.column-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.column-2 {
+    flex-basis: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    background-image: linear-gradient(45deg, #ff004f, black);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-mask-image: linear-gradient(45deg, #ff004f, black);
+    mask-image: linear-gradient(45deg, #ff004f, black);
+}
+
+.poem-text {
+    font-size: 16px;
+    padding: 15px;
+    font-style: italic;
+    color: black;
+}
