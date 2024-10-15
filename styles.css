@@ -2,96 +2,113 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins', sans-serif;
-    box-sizing: border-box;
+    box-sizing: content-box;
+    color: rgb(14, 236, 236);
 }
-
 html {
     scroll-behavior: smooth;
 }
-
-body {
-    background: linear-gradient(to top, #ff004f, white);
-    color: white;
+body{
+    background-color: black;
+    background-blend-mode: color-burn;
+    
 }
 
-#card-container {
-    padding: 30px;
-    color: white;
+
+#page_one{
+    background: linear-gradient(#43A047,#1E88E5,#424242 );
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    height: auto;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
+#page_one h3{
+    text-align: center;
+    color: #FFB300;
+    font-size: 60px;    
 }
-
-.col-1 {
-    flex-basis: 100%;
-}
-
-.col-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.col-2 {
-    flex-basis: 100%;
-}
-
-.Title {
+#page_one ol{
     font-size: 30px;
-    font-weight: 600;
-    background-image: linear-gradient(45deg, #ff004f, black);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-mask-image: linear-gradient(45deg, #ff004f, black);
-    mask-image: linear-gradient(45deg, #ff004f, black);
 }
-
-.message {
-    font-size: 16px;
-    padding: 15px;
-    font-style: italic;
-    color: black;
+#page_one li{
+    font-size: 15px;
 }
-
-#love-container {
-    padding: 30px;
-    color: black;
+#poem{
+    background-image: url(assets/hands.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    height: 100vh;
 }
+#poem h1{
+    font-size: 60px;
+    font-style:italic;
+    text-align: center;
 
-.love-poem {
-    display: flex;
-    flex-wrap: wrap;
 }
-
-.column-1 {
-    flex-basis: 100%;
+#poem p{
+    color: bisque;
+    text-align: right;
 }
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url('assets/hands.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    
+    html{
+        scroll-snap-type: proximity;
+    }
+    #page_one{
+        padding: 10px 10%;
+    }
+    #page_one h3{
+        text-align: center;
+        font-style:italic;
+        color: #00897B   ;
+        font-size: 30px;
+    }
+    #page_one ol li{
+        color: cyan;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    #poem{
+        font-family: 'Arial', sans-serif;
+        background-color: transparent;
+        color: cyan;
+        line-height: 1;
+    }
+    #poem h1{
+        font-size: 30px;
+        padding-bottom: 10px;
+        font-style: italic;
+        text-align: center;
+        color: #00897B;
+        text-align: center;
 
-.column-1 img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.column-2 {
-    flex-basis: 100%;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: 600;
-    background-image: linear-gradient(45deg, #ff004f, black);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-mask-image: linear-gradient(45deg, #ff004f, black);
-    mask-image: linear-gradient(45deg, #ff004f, black);
-}
-
-.poem-text {
-    font-size: 16px;
-    padding: 15px;
-    font-style: italic;
-    color: black;
+    }
+    #poem p{
+        text-align: center;
+        color:#FAFAFA  ;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        /* height: 100vh; */
+    }
+    #spotify-player{
+        position:relative;
+        background-position: center;
+        padding:10px 10% ;
+    }
 }
